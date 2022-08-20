@@ -10,6 +10,7 @@ const Container = styled.div`
     display: flex;
     position: relative;
     ${mobile({ display: 'none' })}
+    overflow: hidden;
 `;
 
 const Arrow = styled.div`
