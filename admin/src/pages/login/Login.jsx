@@ -10,7 +10,9 @@ const Login = () => {
 
     const handleClick = (e) => {
         e.preventDefault();
-        login(dispatch, { username, password });
+        login(dispatch, { username, password }).then(() => {
+            alert('Login success! \nNow you can go to the homepage (/home)');
+        });
     };
 
     return (
